@@ -26,4 +26,3 @@ dependencies:
   - wheel=0.36.2=pyhd3eb1b0_0
   - xz=5.2.5=h1de35cc_0
   - zlib=1.2.11=h1de35cc_3
-prefix: /usr/local/Caskroom/miniconda/base/envs/DocBlogFR
