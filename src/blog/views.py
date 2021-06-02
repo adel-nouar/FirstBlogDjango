@@ -10,4 +10,5 @@ def index(request):
 def article(request, numero_article):
     if numero_article in ['01', '02', '03']:
         return render(request, f'blog/article-{numero_article}.html')
-    return render((request, '/blog/article_not_found.html'))
+    print(numero_article)
+    return render(request, 'blog/article_not_found.html')
