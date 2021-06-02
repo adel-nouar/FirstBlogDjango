@@ -7,13 +7,7 @@ def index(request):
     return render(request, 'blog/index.html')
 
 
-def article_01(request):
-    return render(request, 'blog/article_01.html')
-
-
-def article_02(request):
-    return render(request, 'blog/article_02.html')
-
-
-def article_03(request):
-    return render(request, 'blog/article_03.html')
+def article(request, numero_article):
+    if numero_article in ['01', '02', '03']:
+        return render(request, f'blog/article-{numero_article}.html')
+    return render((request, '/blog/article_not_found.html'))
